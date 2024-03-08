@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#!/usr/bin/env bash
+# Displays the contents of the current directory in list format.
+# Where only displays the part of the name after the first dash.
+
+file=$(ls)
+for i in $file
+do
+  echo "$i" | cut -d '-' -f2
+done
